@@ -12,3 +12,6 @@ Click on Printer.cfg and paste the code in the place given below.
 Click on save at the top right !
 
 WARNING !!!!!!! Make a backup of the Printer.cfg file before any manipulation ! Once printing is finished, delete the added code.
+
+Before copying the code: modify the values ​​enclosed by the desired temperature
+<img width="700" height="437" alt="Capture d&#39;écran 2025-12-01 201718" src="https://github.com/user-attachments/assets/d4ef14cc-36ef-4860-9c87-56984f24da8f" />
