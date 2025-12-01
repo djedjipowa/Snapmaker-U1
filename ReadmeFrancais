@@ -1,1 +1,15 @@
+Snapmaker U1
+Forcer la températeur de chaque extruder durant une impression avec plusieurs têtes.
 
+Connectez-vous à votre imprimante dans Chrome, Firefox, etc,.. grace à l'IP de celle-ci
+
+Faites comme la photo ci-dessous :
+
+
+Click on Printer.cfg and paste the code in the place given below. 2
+
+Click on save at the top right !
+
+WARNING !!!!!!! Make a backup of the Printer.cfg file before any manipulation ! Once printing is finished, delete the added code.
+
+Before copying the code: modify the values ​​enclosed by the desired temperature Capture d'écran 2025-12-01 201718
