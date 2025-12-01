@@ -1,0 +1,23 @@
+[gcode_macro M104]
+rename_existing: M104.1
+gcode:
+  {% set t = params.T|default(-1)|int %}
+  {% if t == 0 %}
+    # T0 -> extruder0, bloquée à 205°C (blocked at 205°C)
+    SET_HEATER_TEMPERATURE HEATER=extruder0 TARGET=205
+  {% else %}
+    M104.1 {rawparams}
+  {% endif %}
+
+
+[gcode_macro M109]
+rename_existing: M109.1
+gcode:
+  {% set t = params.T|default(-1)|int %}
+  {% if t == 0 %}
+    # T0 -> extruder0, chauffe à 205°C et attend ~205 (heats to 205°C and waits ~205)
+    SET_HEATER_TEMPERATURE HEATER=extruder0 TARGET=205
+    TEMPERATURE_WAIT SENSOR=extruder0 MINIMUM=204
+  {% else %}
+    M109.1 {rawparams}
+  {% endif %}
